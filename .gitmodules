@@ -1,0 +1,9 @@
+[submodule "fastbook"]
+	path = fastbook
+	url = https://github.com/fastai/fastbook
+[submodule "fastai2"]
+	path = fastai2
+	url = https://github.com/fastai/fastai2
+[submodule "book_nbs"]
+	path = book_nbs
+	url = https://github.com/fastai/book_nbs
