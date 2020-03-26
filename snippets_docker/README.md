@@ -1,4 +1,5 @@
-# jupyter/docker-stacks snippets
+# [Jupyter Docker Stacks](https://github.com/jupyter/docker-stacks) snippets
+## Jupyter Docker Stacks are a set of ready-to-run Docker images containing Jupyter applications and interactive computing tools.
 
 #### Select a jupyter/docker-stacks from this [list of available images](https://github.com/jupyter/docker-stacks/blob/master/docs/using/selecting.md).
 
@@ -6,9 +7,6 @@
 
 ```
 docker pull [OWNER/IMAGE_NAME:TAG]
-
-# Example:
-docker pull jupyter/minimal-notebook:latest
 ```
 
 #### How to run Jupyter Lab
