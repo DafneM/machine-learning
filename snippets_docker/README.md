@@ -1,26 +1,29 @@
-## How to install a docker image
-1. First, make sure that you've installed docker.
-2. Then, pull the image from DockerHub.
+# jupyter/docker-stacks snippets
+
+#### Select a jupyter/docker-stacks from this [list of available images](https://github.com/jupyter/docker-stacks/blob/master/docs/using/selecting.md).
+
+#### How to download and install a image
+
 ```
-docker pull jupyter/minimal-notebook
-docker pull jupyter/scipy-notebook
-docker pull jupyter/tensorflow-notebook
-docker pull jupyter/pyspark-notebook
+docker pull [OWNER/IMAGE_NAME:TAG]
 ```
 
-## How to run Jupyter Lab
+#### How to run Jupyter Lab
+
 ```
 cd [FOLDER_NAME]
 docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v ${PWD}:/current_directory -w /current_directory [IMAGE_NAME_OR_ID:TAG]
 ```
 
-## How to run a Python script
+#### How to run a Python script
+
 ```
 cd [FOLDER_NAME]
 docker run --rm -v ${PWD}:/current_dir -w /current_dir [IMAGE_NAME_OR_ID:TAG] python [SCRIPT_NAME].py
 ```
 
-# How to run multiple Python scripts
+#### How to run multiple Python scripts
+
 ```
 cd [FOLDER_NAME]
 docker run -it --rm -v ${PWD}:/current_dir -w /current_dir [IMAGE_NAME_OR_ID:TAG] /bin/bash
