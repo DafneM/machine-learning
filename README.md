@@ -4,6 +4,7 @@
 ```
 # Access your submodule directory
 cd submodule
+
 # Pull
 git pull remote your_branch
 # i.e
