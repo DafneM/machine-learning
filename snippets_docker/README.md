@@ -6,6 +6,9 @@
 
 ```
 docker pull [OWNER/IMAGE_NAME:TAG]
+
+# Example:
+docker pull jupyter/minimal-notebook:latest
 ```
 
 #### How to run Jupyter Lab
